@@ -1,0 +1,9 @@
+# Ignore data files
+data/*.csv
+data/*.zip
+
+# Ignore virtual environments
+venv/
+env/
+.pytest_cache/
+__pycache__/
