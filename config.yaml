@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────
+# OULAD Deadline Risk Prediction — Config File
+# All paths, constants, and hyperparameters live here.
+# Never hardcode these values in notebooks or scripts.
+# ─────────────────────────────────────────────
+
+paths:
+  raw_data:       "data/raw/"
+  processed_data: "data/processed/"
+  models:         "models/"
+  reports:        "reports/"
+  logs:           "logs/"
+
+target:
+  column: "is_late"          # our binary target variable
+  positive_label: 1          # 1 = High Risk (late/missing submission)
+  negative_label: 0          # 0 = Low Risk (on-time submission)
+
+train_test_split:
+  train_years: [2013]        # presentations used for training
+  test_years:  [2014]        # presentations used for testing
+  # NEVER use random split — temporal integrity is critical
+
+imbalance:
+  strategy: "smote"          # applied to training set only
+  random_state: 42
+
+models:
+  random_state: 42
+
+eda:
+  inactivity_window_days: 14     # days before deadline to measure inactivity
+  vle_chunk_size: 100000         # rows per chunk when reading studentVle.csv

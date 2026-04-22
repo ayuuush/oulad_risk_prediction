@@ -1,9 +1,28 @@
-# Ignore data files
-data/*.csv
-data/*.zip
-
-# Ignore virtual environments
+# Virtual environment
 venv/
-env/
-.pytest_cache/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Raw data — never commit OULAD CSVs to GitHub
+data/raw/
+data/processed/
+
+# Trained models (large binary files)
+models/*.pkl
+models/*.joblib
+
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+
+# macOS system files
+.DS_Store
+
+# Logs
+logs/*.log
+
+# Environment files with secrets
+.env
