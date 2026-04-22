@@ -8,6 +8,7 @@ venv/
 # Raw data — never commit OULAD CSVs to GitHub
 data/raw/
 data/processed/
+data/*.csv
 
 # Trained models (large binary files)
 models/*.pkl
