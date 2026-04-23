@@ -1,6 +1,6 @@
-# OULAD Deadline Risk Prediction
+# AI-Assisted Academic Workload & Deadline Risk Prediction
 
-MSc Dissertation Project — Predicting student deadline risk using machine learning on the Open University Learning Analytics Dataset (OULAD).
+MSc Standard Project — Predicting student deadline risk using machine learning on the Open University Learning Analytics Dataset (OULAD).
 
 ## Setup
 
